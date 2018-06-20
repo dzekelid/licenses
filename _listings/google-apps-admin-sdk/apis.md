@@ -9,10 +9,10 @@ description: Administer domain resources, create reports, and manage subscriptio
   customer and user usage reports.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/nexusae0_icon2.png
 x-kinRank: "9"
-x-alexaRank: ""
+x-alexaRank: "0"
 tags: Licenses
-created: "2018-05-20"
-modified: "2018-05-20"
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/licenses/master/_listings/google-apps-admin-sdk/apis.md
 specificationVersion: "0.14"
 apis:
