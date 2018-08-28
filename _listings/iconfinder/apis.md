@@ -7,35 +7,29 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1538-iconf
 x-kinRank: "7"
 x-alexaRank: "4089"
 tags: Licenses
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/licenses/master/_listings/iconfinder/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Icon Finder Get license details
-  x-api-slug: icon-finder
+- name: Icon Finder - Get license details
+  x-api-slug: licenseslicenseid-get
   description: Get details about a specific license by its unique ID.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1538-iconfinder.jpg
   humanURL: http://iconfinder.com
-  baseURL: https://api.iconfinder.com//v2///licenses/{licenseID}
-  tags: Licenses
+  baseURL: https://api.iconfinder.com//v2/
+  tags: Icon, Images, Images, Marketplace, internet, Technology, API Provider, Profiles,
+    General Data, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/licenses/master/_listings/iconfinder/licenseslicenseid-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/licenses/master/_listings/iconfinder/licenseslicenseid-get-openapi.md
-- name: Icon Finder
-  x-api-slug: icon-finder
-  description: Iconfinder is the leading search engine and market place for vector
-    icons in SVG, PNG, CSH and AI format..
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1538-iconfinder.jpg
-  humanURL: http://iconfinder.com
-  baseURL: https://api.iconfinder.com//v2/
-  tags: Licenses
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/licenses/master/_listings/iconfinder/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://ibm.watson.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://iconfinder.stack.network
 - type: x-base
   url: https://www.iconfinder.com/xml/
 - type: x-blog

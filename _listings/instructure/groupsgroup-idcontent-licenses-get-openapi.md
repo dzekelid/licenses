@@ -16,6 +16,21 @@ produces:
 consumes:
 - application/json
 paths:
+  /courses/{course_id}/content_licenses:
+    get:
+      summary: List licenses
+      description: List licenses.
+      operationId: list-licenses
+      x-api-path-slug: coursescourse-idcontent-licenses-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Content
+      - Licenses
   /groups/{group_id}/content_licenses:
     get:
       summary: List licenses

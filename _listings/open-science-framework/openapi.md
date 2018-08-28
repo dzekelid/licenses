@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Open Science Framework
 x-complete: 1
@@ -70,4 +69,43 @@ paths:
       - Preprint
       - Provider
       - Licenses
----
+  /license/{license_id}/:
+    get:
+      summary: Retrieve a license
+      description: |-
+        Retrieves the details of a license.
+        #### Returns
+        Returns a JSON object with a `data` key containing the representation of the requested license, if the request is successful.
+
+        If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+      operationId: licenses_read
+      x-api-path-slug: licenselicense-id-get
+      parameters:
+      - in: path
+        name: license_id
+        description: The unique identifier of the license
+      responses:
+        200:
+          description: OK
+      tags:
+      - License
+      - License
+  /:
+    get:
+      summary: Root
+      description: |-
+        Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https://osf.io/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http://cos.io/).
+
+        #### Returns
+        A JSON object with `meta` and `links` keys.
+
+        The `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of the current user, if authentication credentials were provided in the request.
+
+        The `links` key contains links to the following entity collections: [addons](), [collections](), [institutions](#Institutions_institutions_list), [licenses](#Licenses_license_list), [metaschemas](), [nodes](#Nodes_nodes_list), [registrations](), [users](#Users_users_list)
+      operationId: base_read
+      x-api-path-slug: get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Root

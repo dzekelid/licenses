@@ -1,9 +1,8 @@
----
 swagger: "2.0"
 x-collection-name: Iconfinder
 x-complete: 1
 info:
-  title: Icon Finder
+  title: IconFinder
   description: give-your-users-instant-access-to-more-than-300000-icons-
   termsOfService: https://developer.iconfinder.com/api/2.0/terms.html
   version: v2
@@ -31,4 +30,3 @@ paths:
           description: OK
       tags:
       - Licenses
----
